@@ -39,3 +39,15 @@
     }
   }
 }
+// {
+//   "compilerOptions": {
+//     "jsx": "react",
+//     "jsx": "react",
+//     "module": "commonjs", // используйте "commonjs" для Jest
+//     "target": "esnext",
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true
+//   },
+//   "include": ["src/**/*"]
+// }
