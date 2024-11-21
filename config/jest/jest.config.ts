@@ -1,4 +1,5 @@
 import type { Config } from 'jest';
+import path from 'path';
 
 const config: Config = {
 	preset: 'ts-jest',
@@ -13,8 +14,13 @@ const config: Config = {
 	coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
 	testPathIgnorePatterns: ['\\node_modules\\'],
 	clearMocks: true,
-	moduleDirectories: ['node_modules'],
+	moduleDirectories: ['node_modules', 'src'],
 	rootDir: '../../',
+	setupFilesAfterEnv: ['<rootDir>config/jest/setupTest.ts'],
+	moduleNameMapper: {
+		'\\.(s?css)$': 'identity-obj-proxy',
+		'\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+	},
 };
 
 export default config;

@@ -37,7 +37,11 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "src/**/*",
+    "config/jest/**/*"
+  ]
 }
 // {
 //   "compilerOptions": {

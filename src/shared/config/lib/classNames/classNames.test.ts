@@ -1,12 +1,4 @@
-// import { classNames } from "./classNames";
-
-// describe("classNames", () => {
-//   test("test", () => {
-//     // expect(classNames("someClass")).toBe("someClass");
-//     expect(true).toBe(true);
-//   });
-// });
-import { classNames } from './classNames';
+import { classNames } from 'shared/config/lib/classNames/classNames';
 
 describe('classNames', () => {
 	test('with only first param', () => {
