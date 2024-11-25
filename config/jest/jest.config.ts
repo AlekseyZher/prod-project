@@ -11,8 +11,10 @@ const config: Config = {
 	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 	// другие настройки...
 	testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
-	coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
-	testPathIgnorePatterns: ['\\node_modules\\'],
+	// coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
+	// testPathIgnorePatterns: ['\\node_modules\\'],
+	coveragePathIgnorePatterns: ['/node_modules/'],
+	testPathIgnorePatterns: ['/node_modules/'],
 	clearMocks: true,
 	moduleDirectories: ['node_modules', 'src'],
 	rootDir: '../../',
