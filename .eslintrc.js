@@ -37,16 +37,17 @@ module.exports = {
 		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
 		'max-len': ['error', { ignoreComments: true, code: 100 }],
 		'no-tabs': ['error', { allowIndentationTabs: true }],
+		'linebreak-style': ['error', 'windows'],
 	},
 	globals: {
 		__IS_DEV__: true,
 	},
 	overrides: [
-        {
-            files: ['**/src/**/*.test.{ts,tsx}'],
-            rules: {
-                "i18next/no-literal-string": "off"
-            }
-        }
-    ]
+		{
+			files: ['**/src/**/*.test.{ts,tsx}'],
+			rules: {
+				'i18next/no-literal-string': 'off',
+			},
+		},
+	],
 };
