@@ -1,4 +1,4 @@
-import './styles/index.scss';
+/* eslint-disable react/button-has-type */
 import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
 import { classNames } from 'shared/config/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';

@@ -14,7 +14,7 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint', 'i18next'],
+	plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
 	rules: {
 		'react/jsx-indent': [2, 'tab'],
 		'react/jsx-indent-props': [2, 'tab'],
@@ -38,6 +38,9 @@ module.exports = {
 		'max-len': ['error', { ignoreComments: true, code: 100 }],
 		'no-tabs': ['error', { allowIndentationTabs: true }],
 		'linebreak-style': ['error', 'windows'],
+		'jsx-a11y/no-static-element-interactions': 'off',
+		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/exhaustive-deps': 'error',
 	},
 	globals: {
 		__IS_DEV__: true,

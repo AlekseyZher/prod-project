@@ -5,6 +5,7 @@ import { ButtonHTMLAttributes, FC } from 'react';
 import cls from './Button.module.scss';
 
 export enum ButtonTheme {
+  CLEAR_INVERTED = 'clearInverted',
   CLEAR = 'clear',
   BACKGROUND = 'background',
   BACKGROUND_INVERTEED = 'backgroundInverted',
